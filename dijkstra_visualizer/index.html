@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Dijkstra Visualizer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="page-logo">
+            <h2>Pathfinding Visualizing</h2>
+        </div>
+        <div class="map-size-box">
+            <h3>Set Map Size</h3>
+
+            <div>
+                <label for="width-input">Width</label>
+                <input id="width-input" type="number" min="1" max="50" value="10">
+            </div>
+            <div>
+                <label for="height-input">Height</label>
+                <input id="height-input" type="number" min="1" max="50" value="5">
+            </div>
+
+            <button id="size-button" class="size-button">Resize Map</button>
+        </div>
+        <div class="setup-box">
+            <h3>Setup Nodes</h3>
+            <p>(toggle an option and click on the nodes)</p>
+            <div class="node-buttons-box">
+                <button id="block-button" class="block-button">Block Nodes</button>
+                <button id="start-button" class="start-button">Set<br> Start</button>
+                <button id="end-button" class="end-button">Set<br> End</button>
+                <button id="clear-button" class="clear-button">Clear<br> Map</button>
+            </div>
+        </div>
+        <div class="visualize-box">
+            <h3>Start Algorithm</h3>
+            <p>(both a start and end node must be placed)</p>
+
+            <button id="visualize-button" class="visualize-button">Visulize Algorithm</button>
+        </div>
+    </header>
+    
+    <div class="map-legend">
+        <ul class="legend-list">
+            <li>
+                <div class="item-square" style="background-color: #ffffff;"></div>
+                <div class="item-label">Blank Node</div>
+            </li>
+            <li>
+                <div class="item-square" style="background-color: #243f39;"></div>
+                <div class="item-label">Blocked Node</div>
+            </li>
+            <li>
+                <div class="item-square" style="background-color: #fdffbf;"></div>
+                <div class="item-label">Visited Node</div>
+            </li>
+            <li>
+                <div class="item-square" style="background-color: #bfeaff;"></div>
+                <div class="item-label">Start Node</div>
+            </li>
+            <li>
+                <div class="item-square" style="background-color: #ff9883;"></div>
+                <div class="item-label">End Node</div>
+            </li>
+            <li>
+                <div class="item-square" style="background-color: #f6ff70;"></div>
+                <div class="item-label">Path Node</div>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <table id="map-table" class="map-table"></table>
+    </main>
+
+    <script src="scripts/dijkstra.js"></script>
+    <script src="scripts/map.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
