@@ -32,7 +32,7 @@ Impossible setups results in no path traced as per the last example.
 
 While being a fairly hard project to build in my experience, it was a fun one at that. Getting to build this application was a step into finding greater 
 confidency into front end development. Even though I've had considerable success in this design, there's serious efficiency problems in regards to rendering
-the nodes, this is due to the grid method that i applied. This substentially decreases the page's performance and causes the algorith to execute slowly, as it
+the nodes, this is due to the grid method that i applied. This substentially decreases the page's performance and causes the algorithm to execute slowly, as it
 runs synchronously with the map renderer. This could be solved via many ways, using a canvas pixelated approach, asynchronous rendering and logic(though this
 solution would not be ideal), avoiding rendering the whole grid on each iteration, etc. I've decided upon remaking the project using the powerful tools from 
 Angular framework, and developed a new enhanced version at <a href="https://github.com/MiguelFirmino/pathfinding-visualizer">Pathfinding Visualizer</a>.
