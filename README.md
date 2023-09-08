@@ -5,7 +5,7 @@ I was able to learn a lot about the importance of a design pattern, code modular
 as nodes into user-friendly, visible and interactable components. This was one of my first serious efforts in web-development as it pushed me 
 towards being a better problem solver.
 
-## Instructions🏴
+## Instructions📜
 
 1) To run the app, simply download the files or clone the repo and access the index.html file.
 2) To "draw" on the grid, use the buttons on the header of the page to apply which functionality is needed to be employed.
