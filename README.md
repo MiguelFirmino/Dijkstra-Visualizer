@@ -11,7 +11,7 @@ towards being a better problem solver.
 2) To "draw" on the grid, use the buttons on the header of the page to apply which functionality is needed to be employed.
 3) Left click the squares you wish to fill and click on the "visualize algorithm" button.
    
-Obs: Both a start and end node must be set in order to boot the visualization.
+- Obs: Both a start and end node must be set in order to boot the visualization.
 
 ## Preview🏴
 
